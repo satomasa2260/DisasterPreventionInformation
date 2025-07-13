@@ -509,6 +509,7 @@ body {
     box-shadow: 0 5px 20px rgba(0,0,0,0.07);
     transition: all 0.3s ease;
     border: 2px solid var(--color-orange);
+    text-align: center;
 }
 
 .app-card:hover {
@@ -527,6 +528,14 @@ body {
     color: var(--color-orange);
 }
 
+.app-info h3,
+.app-info p,
+.app-links {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .app-info h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
@@ -542,11 +551,14 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .app-link {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     padding: 0.8rem 1.5rem;
     background: var(--color-orange);
@@ -555,6 +567,7 @@ body {
     color: var(--color-white);
     transition: all 0.3s ease;
     font-size: 0.9rem;
+    text-align: center;
 }
 
 .app-link:hover {
@@ -871,10 +884,15 @@ body {
     
     .app-links {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .app-link {
         justify-content: center;
+        text-align: center;
+        width: 100%;
+        max-width: 250px;
     }
 }
 

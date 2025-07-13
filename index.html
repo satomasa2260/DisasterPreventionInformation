@@ -14,7 +14,7 @@
     <link rel="alternate" hreflang="ja" href="?lang=ja">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" alt="サイトアイコン">
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -220,27 +220,27 @@
                 <div class="embassy-section">
                     <h3 data-i18n="embassy_title">在日大使館・領事館</h3>
                     <div class="embassy-grid">
-                        <a href="https://jp.usembassy.gov/" target="_blank" class="embassy-link">
+                        <a href="https://jp.usembassy.gov/" target="_blank" class="embassy-link" rel="noopener noreferrer">
                             <span class="flag">🇺🇸</span>
                             <span data-i18n="us_embassy">アメリカ合衆国</span>
                         </a>
-                        <a href="https://www.gov.uk/world/organisations/british-embassy-tokyo" target="_blank" class="embassy-link">
+                        <a href="https://www.gov.uk/world/organisations/british-embassy-tokyo" target="_blank" class="embassy-link" rel="noopener noreferrer">
                             <span class="flag">🇬🇧</span>
                             <span data-i18n="uk_embassy">イギリス</span>
                         </a>
-                        <a href="http://jp.china-embassy.org/" target="_blank" class="embassy-link">
+                        <a href="http://jp.china-embassy.org/" target="_blank" class="embassy-link" rel="noopener noreferrer">
                             <span class="flag">🇨🇳</span>
                             <span data-i18n="china_embassy">中国</span>
                         </a>
-                        <a href="https://overseas.mofa.go.kr/jp-ja/index.do" target="_blank" class="embassy-link">
+                        <a href="https://overseas.mofa.go.kr/jp-ja/index.do" target="_blank" class="embassy-link" rel="noopener noreferrer">
                             <span class="flag">🇰🇷</span>
                             <span data-i18n="korea_embassy">韓国</span>
                         </a>
-                        <a href="https://www.roc-taiwan.org/jp/" target="_blank" class="embassy-link">
+                        <a href="https://www.roc-taiwan.org/jp/" target="_blank" class="embassy-link" rel="noopener noreferrer">
                             <span class="flag">🇹🇼</span>
                             <span data-i18n="taiwan_embassy">台湾</span>
                         </a>
-                        <a href="https://japan.embassy.gov.au/" target="_blank" class="embassy-link">
+                        <a href="https://japan.embassy.gov.au/" target="_blank" class="embassy-link" rel="noopener noreferrer">
                             <span class="flag">🇦🇺</span>
                             <span data-i18n="australia_embassy">オーストラリア</span>
                         </a>
@@ -476,5 +476,52 @@
     <!-- JavaScript -->
     <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
+    <!-- 構造化データ（JSON-LD） -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "インバウンド向け災害時情報LP",
+  "url": "https://github.com/satomasa2260/DisasterPreventionInformation",
+  "description": "海外インバウンド観光客向けの多言語災害時情報サイト。地震・津波・大雨・台風時の行動、緊急連絡先、役立つアプリ、オフライン情報などを提供。個人情報は取得しません。",
+  "inLanguage": ["ja", "en", "zh", "ko"],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Disaster Prevention Information Project"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "このサイトは誰向けですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "海外からの訪日観光客向けに、日本滞在中の災害時に役立つ情報を多言語で提供しています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "個人情報は取得されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "当サイトでは個人情報を一切取得しません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "どんな災害情報が掲載されていますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "地震、津波、大雨・洪水、台風時の行動フロー、緊急連絡先、役立つアプリ、オフライン情報などを掲載しています。"
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html> 
