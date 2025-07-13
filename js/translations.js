@@ -131,9 +131,9 @@ const translations = {
         disclaimer_4: "外部サイトへのリンクは便宜上掲載しており、内容について保証するものではありません。",
         disclaimer_5: "当サイトは個人情報を取得しません。",
         privacy_policy_title: "プライバシーポリシー",
-        privacy_policy_body: "当サイトでは、利用者の個人情報を一切取得しません。<br>アクセス解析や広告等も行っておりません。<br>安心してご利用ください。",
+        privacy_policy_body: "当サイトでは、利用者の個人情報を一切取得しません。アクセス解析や広告等も行っておりません。安心してご利用ください。",
         terms_of_use_title: "利用規約",
-        terms_of_use_body: "本サイトは、災害時の情報提供を目的としたものであり、内容の正確性や最新性について保証するものではありません。<br>利用者は自己責任でご利用ください。<br>また、当サイトは個人情報を取得しません。"
+        terms_of_use_body: "本サイトは、災害時の情報提供を目的としたものであり、内容の正確性や最新性について保証するものではありません。利用者は自己責任でご利用ください。また、当サイトは個人情報を取得しません。"
     },
     
     en: {
@@ -267,9 +267,9 @@ const translations = {
         disclaimer_4: "Links to external sites are provided for convenience and we do not guarantee their content.",
         disclaimer_5: "This site does not collect any personal information.",
         privacy_policy_title: "Privacy Policy",
-        privacy_policy_body: "This site does not collect any personal information.<br>No access analytics or advertising is used.<br>You can use this site with peace of mind.",
+        privacy_policy_body: "This site does not collect any personal information. No access analytics or advertising is used. You can use this site with peace of mind.",
         terms_of_use_title: "Terms of Use",
-        terms_of_use_body: "This site is intended to provide information in the event of a disaster, and does not guarantee the accuracy or timeliness of its content.<br>Use at your own risk.<br>This site does not collect any personal information."
+        terms_of_use_body: "This site is intended to provide information in the event of a disaster, and does not guarantee the accuracy or timeliness of its content. Use at your own risk. This site does not collect any personal information."
     },
     
     zh: {
@@ -403,9 +403,9 @@ const translations = {
         disclaimer_4: "外部网站链接仅为方便而提供，对其内容不作任何保证。",
         disclaimer_5: "本网站不收集任何个人信息。",
         privacy_policy_title: "隐私政策",
-        privacy_policy_body: "本网站不收集任何个人信息。<br>不使用访问分析或广告。<br>请放心使用。",
+        privacy_policy_body: "本网站不收集任何个人信息。不使用访问分析或广告。请放心使用。",
         terms_of_use_title: "使用条款",
-        terms_of_use_body: "本网站旨在提供灾害时的信息，不保证内容的准确性或时效性。<br>请用户自行承担使用风险。<br>本网站不收集任何个人信息。"
+        terms_of_use_body: "本网站旨在提供灾害时的信息，不保证内容的准确性或时效性。请用户自行承担使用风险。本网站不收集任何个人信息。"
     },
     
     ko: {
@@ -539,8 +539,8 @@ const translations = {
         disclaimer_4: "외부 사이트 링크는 편의를 위해 제공되며, 그 내용에 대해서는 보장하지 않습니다.",
         disclaimer_5: "본 사이트는 어떠한 개인정보도 수집하지 않습니다.",
         privacy_policy_title: "개인정보 보호정책",
-        privacy_policy_body: "본 사이트는 이용자의 개인정보를 일절 수집하지 않습니다.<br>접속 분석이나 광고도 실시하지 않습니다.<br>안심하고 이용해 주십시오.",
+        privacy_policy_body: "본 사이트는 이용자의 개인정보를 일절 수집하지 않습니다.접속 분석이나 광고도 실시하지 않습니다.안심하고 이용해 주십시오.",
         terms_of_use_title: "이용약관",
-        terms_of_use_body: "본 사이트는 재해 시 정보 제공을 목적으로 하며, 내용의 정확성이나 최신성을 보장하지 않습니다.<br>이용자는 자신의 책임하에 이용해 주십시오.<br>또한, 본 사이트는 개인정보를 수집하지 않습니다."
+        terms_of_use_body: "본 사이트는 재해 시 정보 제공을 목적으로 하며, 내용의 정확성이나 최신성을 보장하지 않습니다.이용자는 자신의 책임하에 이용해 주십시오.또한, 본 사이트는 개인정보를 수집하지 않습니다."
     }
 }; 
