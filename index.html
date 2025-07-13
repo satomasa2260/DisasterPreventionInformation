@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="海外インバウンド観光客向け災害時情報サイト。地震、津波、大雨、台風などの災害時の安全な行動方法、緊急連絡先、役立つアプリを多言語で提供します。">
+    <meta name="keywords" content="災害,インバウンド,観光客,緊急時,避難,多言語,日本">
+    <title>災害時情報 - Disaster Information for Foreign Tourists</title>
+    
+    <!-- SEO for multilingual -->
+    <link rel="alternate" hreflang="en" href="?lang=en">
+    <link rel="alternate" hreflang="zh" href="?lang=zh">
+    <link rel="alternate" hreflang="ko" href="?lang=ko">
+    <link rel="alternate" hreflang="ja" href="?lang=ja">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <h1 data-i18n="title">災害時情報</h1>
+                </div>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="ja">
+                        <span class="flag">🇯🇵</span>
+                        <span>日本語</span>
+                    </button>
+                    <button class="lang-btn" data-lang="en">
+                        <span class="flag">🇺🇸</span>
+                        <span>English</span>
+                    </button>
+                    <button class="lang-btn" data-lang="zh">
+                        <span class="flag">🇨🇳</span>
+                        <span>中文</span>
+                    </button>
+                    <button class="lang-btn" data-lang="ko">
+                        <span class="flag">🇰🇷</span>
+                        <span>한국어</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 data-i18n="hero_title">災害時の安全な行動を</h2>
+                    <p data-i18n="hero_subtitle">日本滞在中の災害時に必要な情報を多言語で提供します</p>
+                    <div class="hero-buttons">
+                        <a href="#emergency-contacts" class="btn btn-primary">
+                            <i class="fas fa-phone"></i>
+                            <span data-i18n="emergency_contacts">緊急連絡先</span>
+                        </a>
+                        <a href="#disaster-guide" class="btn btn-secondary">
+                            <i class="fas fa-info-circle"></i>
+                            <span data-i18n="disaster_guide">災害ガイド</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Navigation -->
+        <section class="quick-nav">
+            <div class="container">
+                <div class="nav-grid">
+                    <a href="#emergency-contacts" class="nav-card emergency">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3 data-i18n="nav_emergency">緊急連絡先</h3>
+                    </a>
+                    <a href="#disaster-guide" class="nav-card guide">
+                        <i class="fas fa-map-signs"></i>
+                        <h3 data-i18n="nav_guide">行動ガイド</h3>
+                    </a>
+                    <a href="#useful-apps" class="nav-card apps">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3 data-i18n="nav_apps">役立つアプリ</h3>
+                    </a>
+                    <a href="#preparation" class="nav-card prep">
+                        <i class="fas fa-tools"></i>
+                        <h3 data-i18n="nav_prep">事前準備</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disaster Guide -->
+        <section id="disaster-guide" class="disaster-guide">
+            <div class="container">
+                <h2 class="section-title" data-i18n="disaster_guide_title">災害時の行動フロー</h2>
+                <div class="disaster-grid">
+                    <div class="disaster-card earthquake">
+                        <div class="card-header">
+                            <i class="fas fa-earthquake"></i>
+                            <h3 data-i18n="earthquake_title">地震</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li data-i18n="earthquake_step1">身を守る（机の下など）</li>
+                                <li data-i18n="earthquake_step2">火の始末</li>
+                                <li data-i18n="earthquake_step3">慌てて外に出ない</li>
+                                <li data-i18n="earthquake_step4">エレベーター使用禁止</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="disaster-card tsunami">
+                        <div class="card-header">
+                            <i class="fas fa-water"></i>
+                            <h3 data-i18n="tsunami_title">津波</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li data-i18n="tsunami_step1">高台への即時避難</li>
+                                <li data-i18n="tsunami_step2">津波警報・注意報の確認</li>
+                                <li data-i18n="tsunami_step3">海から離れる</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="disaster-card flood">
+                        <div class="card-header">
+                            <i class="fas fa-cloud-rain"></i>
+                            <h3 data-i18n="flood_title">大雨・洪水</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li data-i18n="flood_step1">ハザードマップの確認</li>
+                                <li data-i18n="flood_step2">避難指示・避難勧告への従順</li>
+                                <li data-i18n="flood_step3">低地からの避難</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="disaster-card typhoon">
+                        <div class="card-header">
+                            <i class="fas fa-wind"></i>
+                            <h3 data-i18n="typhoon_title">台風</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul>
+                                <li data-i18n="typhoon_step1">外出自粛</li>
+                                <li data-i18n="typhoon_step2">最新の気象情報確認</li>
+                                <li data-i18n="typhoon_step3">窓の補強</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contacts -->
+        <section id="emergency-contacts" class="emergency-contacts">
+            <div class="container">
+                <h2 class="section-title" data-i18n="emergency_contacts_title">緊急連絡先</h2>
+                <div class="contacts-grid">
+                    <div class="contact-card police">
+                        <div class="contact-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 data-i18n="police">警察</h3>
+                            <div class="phone-number">110</div>
+                            <p data-i18n="police_note">英語対応可能</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card fire">
+                        <div class="contact-icon">
+                            <i class="fas fa-fire-extinguisher"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 data-i18n="fire_ambulance">消防・救急</h3>
+                            <div class="phone-number">119</div>
+                            <p data-i18n="fire_note">英語対応可能</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card coast-guard">
+                        <div class="contact-icon">
+                            <i class="fas fa-anchor"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 data-i18n="coast_guard">海上保安庁</h3>
+                            <div class="phone-number">118</div>
+                            <p data-i18n="coast_guard_note">海の事故・事件</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card jnto">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 data-i18n="jnto_hotline">JNTO観光案内</h3>
+                            <div class="phone-number">050-3816-2787</div>
+                            <p data-i18n="jnto_note">24時間365日対応</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="embassy-section">
+                    <h3 data-i18n="embassy_title">在日大使館・領事館</h3>
+                    <div class="embassy-grid">
+                        <a href="https://jp.usembassy.gov/" target="_blank" class="embassy-link">
+                            <span class="flag">🇺🇸</span>
+                            <span data-i18n="us_embassy">アメリカ合衆国</span>
+                        </a>
+                        <a href="https://www.gov.uk/world/organisations/british-embassy-tokyo" target="_blank" class="embassy-link">
+                            <span class="flag">🇬🇧</span>
+                            <span data-i18n="uk_embassy">イギリス</span>
+                        </a>
+                        <a href="http://jp.china-embassy.org/" target="_blank" class="embassy-link">
+                            <span class="flag">🇨🇳</span>
+                            <span data-i18n="china_embassy">中国</span>
+                        </a>
+                        <a href="https://overseas.mofa.go.kr/jp-ja/index.do" target="_blank" class="embassy-link">
+                            <span class="flag">🇰🇷</span>
+                            <span data-i18n="korea_embassy">韓国</span>
+                        </a>
+                        <a href="https://www.roc-taiwan.org/jp/" target="_blank" class="embassy-link">
+                            <span class="flag">🇹🇼</span>
+                            <span data-i18n="taiwan_embassy">台湾</span>
+                        </a>
+                        <a href="https://japan.embassy.gov.au/" target="_blank" class="embassy-link">
+                            <span class="flag">🇦🇺</span>
+                            <span data-i18n="australia_embassy">オーストラリア</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Useful Apps -->
+        <section id="useful-apps" class="useful-apps">
+            <div class="container">
+                <h2 class="section-title" data-i18n="useful_apps_title">役立つスマホアプリ</h2>
+                <div class="apps-grid">
+                    <div class="app-card safety-tips">
+                        <div class="app-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="app-info">
+                            <h3 data-i18n="safety_tips_title">Safety tips</h3>
+                            <p data-i18n="safety_tips_desc">観光庁監修、緊急情報プッシュ通知、対応フローチャート</p>
+                            <div class="app-links">
+                                <a href="https://apps.apple.com/jp/app/safety-tips/id858357174" target="_blank" class="app-link">
+                                    <i class="fab fa-apple"></i>
+                                    <span>App Store</span>
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=jp.co.rcsc.safetyTips.android" target="_blank" class="app-link">
+                                    <i class="fab fa-google-play"></i>
+                                    <span>Google Play</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app-card yahoo-disaster">
+                        <div class="app-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="app-info">
+                            <h3 data-i18n="yahoo_disaster_title">Yahoo! 防災速報</h3>
+                            <p data-i18n="yahoo_disaster_desc">災害情報のプッシュ通知</p>
+                            <div class="app-links">
+                                <a href="https://apps.apple.com/jp/app/yahoo-%E9%98%B2%E7%81%BD%E9%80%9F%E5%A0%B1/id481914139" target="_blank" class="app-link">
+                                    <i class="fab fa-apple"></i>
+                                    <span>App Store</span>
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=jp.co.yahoo.android.emg" target="_blank" class="app-link">
+                                    <i class="fab fa-google-play"></i>
+                                    <span>Google Play</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app-card nhk-news">
+                        <div class="app-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="app-info">
+                            <h3 data-i18n="nhk_news_title">NHKニュース・防災</h3>
+                            <p data-i18n="nhk_news_desc">最新ニュースと防災情報</p>
+                            <div class="app-links">
+                                <a href="https://apps.apple.com/jp/app/nhk-%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9-%E9%98%B2%E7%81%BD/id1121104608" target="_blank" class="app-link">
+                                    <i class="fab fa-apple"></i>
+                                    <span>App Store</span>
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=jp.or.nhk.news" target="_blank" class="app-link">
+                                    <i class="fab fa-google-play"></i>
+                                    <span>Google Play</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Preparation -->
+        <section id="preparation" class="preparation">
+            <div class="container">
+                <h2 class="section-title" data-i18n="preparation_title">災害への備え</h2>
+                <div class="prep-grid">
+                    <div class="prep-card">
+                        <div class="prep-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <h3 data-i18n="hazard_map_title">ハザードマップの確認</h3>
+                        <p data-i18n="hazard_map_desc">滞在地域の災害リスクを事前に確認しましょう</p>
+                    </div>
+
+                    <div class="prep-card">
+                        <div class="prep-icon">
+                            <i class="fas fa-suitcase"></i>
+                        </div>
+                        <h3 data-i18n="emergency_kit_title">非常持ち出し品</h3>
+                        <ul>
+                            <li data-i18n="emergency_kit_item1">スマートフォン・モバイルバッテリー</li>
+                            <li data-i18n="emergency_kit_item2">現金</li>
+                            <li data-i18n="emergency_kit_item3">常備薬</li>
+                            <li data-i18n="emergency_kit_item4">簡単な食料・水</li>
+                        </ul>
+                    </div>
+
+                    <div class="prep-card">
+                        <div class="prep-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 data-i18n="contact_plan_title">連絡方法の確認</h3>
+                        <p data-i18n="contact_plan_desc">家族や友人との連絡方法を事前に確認しましょう</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section class="download-section">
+            <div class="container">
+                <div class="download-content">
+                    <h2 data-i18n="download_title">オフライン用情報</h2>
+                    <p data-i18n="download_desc">インターネット接続がない場合でも利用できるPDF版をダウンロード</p>
+                    <button class="btn btn-download" onclick="showOfflineInfo()">
+                        <i class="fas fa-download"></i>
+                        <span data-i18n="download_pdf">オフライン情報を表示</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p data-i18n="footer_note">このサイトは海外インバウンド観光客の安全確保を目的として作成されています。</p>
+                    <p data-i18n="footer_disclaimer">情報は定期的に更新されますが、最新の情報は公式機関の発表をご確認ください。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- プライバシーポリシー -->
+    <section id="privacy-policy" style="background:#fffbe8; padding:2rem 0;">
+      <div class="container">
+        <h2 data-i18n="privacy_policy_title" style="color:#096B68;">プライバシーポリシー</h2>
+        <p data-i18n="privacy_policy_body">当サイトでは、利用者の個人情報を一切取得しません。<br>
+        アクセス解析や広告等も行っておりません。<br>
+        安心してご利用ください。</p>
+      </div>
+    </section>
+
+    <!-- 利用規約 -->
+    <section id="terms-of-use" style="background:#fffbe8; padding:2rem 0;">
+      <div class="container">
+        <h2 data-i18n="terms_of_use_title" style="color:#096B68;">利用規約</h2>
+        <p data-i18n="terms_of_use_body">本サイトは、災害時の情報提供を目的としたものであり、内容の正確性や最新性について保証するものではありません。<br>
+        利用者は自己責任でご利用ください。<br>
+        また、当サイトは個人情報を取得しません。</p>
+      </div>
+    </section>
+
+    <!-- 注意事項・免責事項 -->
+    <section id="disclaimer" style="background:#fffbe8; padding:2rem 0;">
+      <div class="container">
+        <h2 data-i18n="disclaimer_title" style="color:#096B68;">注意事項・免責事項</h2>
+        <ul>
+          <li data-i18n="disclaimer_1">本サイトの情報は、災害時の参考情報として提供しています。必ず公式機関の発表や自治体の指示を優先してください。</li>
+          <li data-i18n="disclaimer_2">掲載内容の正確性・最新性には努めていますが、保証するものではありません。</li>
+          <li data-i18n="disclaimer_3">本サイトの情報利用により生じた損害等について、運営者は一切責任を負いません。</li>
+          <li data-i18n="disclaimer_4">外部サイトへのリンクは便宜上掲載しており、内容について保証するものではありません。</li>
+          <li data-i18n="disclaimer_5">当サイトは個人情報を取得しません。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Offline Info Modal -->
+    <div id="offlineModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-i18n="offline_info_title">オフライン用災害時情報</h2>
+                <button class="close-modal" onclick="closeOfflineModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="offline-section">
+                    <h3 data-i18n="emergency_contacts_offline">緊急連絡先</h3>
+                    <ul>
+                        <li><strong data-i18n="police_label">警察:</strong> 110</li>
+                        <li><strong data-i18n="fire_ambulance_label">消防・救急:</strong> 119</li>
+                        <li><strong data-i18n="coast_guard_label">海上保安庁:</strong> 118</li>
+                        <li><strong data-i18n="jnto_label">JNTO観光案内:</strong> 050-3816-2787</li>
+                    </ul>
+                </div>
+                
+                <div class="offline-section">
+                    <h3 data-i18n="disaster_actions_offline">災害時の行動</h3>
+                    <h4 data-i18n="earthquake_offline">地震</h4>
+                    <ul>
+                        <li data-i18n="earthquake_step1_offline">身を守る（机の下など）</li>
+                        <li data-i18n="earthquake_step2_offline">火の始末</li>
+                        <li data-i18n="earthquake_step3_offline">慌てて外に出ない</li>
+                        <li data-i18n="earthquake_step4_offline">エレベーター使用禁止</li>
+                    </ul>
+                    
+                    <h4 data-i18n="tsunami_offline">津波</h4>
+                    <ul>
+                        <li data-i18n="tsunami_step1_offline">高台への即時避難</li>
+                        <li data-i18n="tsunami_step2_offline">津波警報・注意報の確認</li>
+                        <li data-i18n="tsunami_step3_offline">海から離れる</li>
+                    </ul>
+                </div>
+                
+                <div class="offline-section">
+                    <h3 data-i18n="useful_phrases_offline">役立つフレーズ</h3>
+                    <ul>
+                        <li><strong data-i18n="help_me_label">助けてください:</strong> <span data-i18n="help_me_phrase">Help me, please.</span></li>
+                        <li><strong data-i18n="call_ambulance_label">救急車を呼んでください:</strong> <span data-i18n="call_ambulance_phrase">Please call an ambulance.</span></li>
+                        <li><strong data-i18n="evacuation_center_label">避難所はどこですか:</strong> <span data-i18n="evacuation_center_phrase">Where is the evacuation center?</span></li>
+                        <li><strong data-i18n="water_please_label">水をください:</strong> <span data-i18n="water_please_phrase">Water, please.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
